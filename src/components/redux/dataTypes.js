@@ -1,0 +1,10 @@
+export const ADD_FN = "ADD_FN";
+export const ADD_LN = "ADD_LN";
+export const ADD_TODO = "ADD_TODO";
+export const ADD_DATE = "ADD_DATE";
+export const ADD_COLOR = "ADD_COLOR";
+export const ADD_EMAIL = "ADD_EMAIL";
+export const ADD_PASSWORD = "ADD_PASSWORD";
+export const USER = "USER";
+export const USER_ID = "USER_ID";
+export const USER_EMAIL = "USER_EMAIL";

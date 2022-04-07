@@ -1,0 +1,68 @@
+.Bg {
+  background-color: #181820;
+  position: fixed;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+}
+.Bgcontainer {
+  background-color:#21212B ;
+  border-radius: 30px;
+  color: #B7B5B0;
+}
+.Bginput {
+  color: #292929;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 18px;
+  background-color: #eae8e3;
+}
+.wellcome{
+  background-color:#21212B ;
+  box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+ border-radius: 15px;
+ padding: 5px;
+ height: 20vh;
+}
+.wellcome:hover{
+  box-shadow: 0 0 20px rgb(22, 61, 215);
+}
+
+.Bginput:hover{
+  box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+}
+.bg-menu{
+  background-color:#21212B ;
+  border-radius: 10px;
+  padding: 10px;
+}
+.fetchtodos{
+  width: 90%;
+}
+
+.todocontainer{
+  width: 45%;
+}
+#todolist{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 2%;
+  color:rgb(210, 208, 208);
+  border-radius: 30px;
+  background-color: #21212B;
+  display: flex;
+  flex-direction: column;
+}
+.date{
+  background-color: #181820;
+  padding: 5px;
+  border-radius: 10px;
+}
+.todo{
+  background-color: #21212B;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+  overflow-wrap: break-word;
+}
