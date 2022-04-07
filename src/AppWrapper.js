@@ -17,9 +17,9 @@ export default function AppWrapper() {
           <App />
           <Routes>
             <Route path="" element={<Root />} />
-            <Route path="/Register" element={<Signup />} />
-            <Route path="/Addtodo" element={<Addtodo />} />
-            <Route path="/Yourtodos" element={<FetchTodos />} />
+            <Route path="Register" element={<Signup />} />
+            <Route path="Addtodo" element={<Addtodo />} />
+            <Route path="Yourtodos" element={<FetchTodos />} />
           </Routes>
         </Provider>
       </div>
