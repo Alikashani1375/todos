@@ -25,11 +25,11 @@ function Menu() {
       <div className="m-auto">
         <Navbar variant="dark">
           <Container>
-            <Navbar.Brand href="/todos">Todo</Navbar.Brand>
+            <Navbar.Brand href="/">Todo</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="/todos/Addtodo">Add Todo</Nav.Link>
-              <Nav.Link href="/todos/Yourtodos">Your Todos</Nav.Link>
-              <Nav.Link href="/todos/Register">Register</Nav.Link>
+              <Nav.Link href="/Addtodo">Add Todo</Nav.Link>
+              <Nav.Link href="/Yourtodos">Your Todos</Nav.Link>
+              <Nav.Link href="/Register">Register</Nav.Link>
             </Nav>
           </Container>
         </Navbar>

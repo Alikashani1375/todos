@@ -15,7 +15,6 @@ function App() {
         dispatch(userid(user.uid));
         dispatch(useremail(user.email));
       } else {
-        console.log("email not found");
       }
     });
   };
