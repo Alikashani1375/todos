@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import datastore from "./components/redux/store";
 import App from "./App";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Addtodo from "./components/Addtodo";
 import Signup from "./components/Signup";
 import "./App.css";
@@ -14,13 +14,17 @@ export default function AppWrapper() {
     <div className="Bg">
       <div className="Bg1">
         <Provider store={datastore}>
-          <App />
-          <Routes>
-            <Route path="" element={<Root />} />
-            <Route path="Register" element={<Signup />} />
-            <Route path="Addtodo" element={<Addtodo />} />
-            <Route path="Yourtodos" element={<FetchTodos />} />
-          </Routes>
+          <Router exact>
+            <App />
+            <main>
+              <Switch>
+                <Route exact path="/" component={Root} />
+                <Route path="/Register" component={Signup} />
+                <Route path="/Addtodo" component={Addtodo} />
+                <Route path="/Yourtodos" component={FetchTodos} />
+              </Switch>
+            </main>
+          </Router>
         </Provider>
       </div>
     </div>
