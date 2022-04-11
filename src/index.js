@@ -4,8 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import AppWrapper from "./AppWrapper";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <React.StrictMode>
     <AppWrapper />
-  </BrowserRouter>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
