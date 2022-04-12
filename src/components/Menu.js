@@ -3,6 +3,7 @@ import { Nav, Container, Navbar, Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const useremail = useSelector((state) => state.useremail);
@@ -29,7 +30,7 @@ function Menu() {
             <Nav className="me-auto">
               <Nav.Link href="/todos/addtodo">Add Todo</Nav.Link>
               <Nav.Link href="/todos/yourtodos">Your Todos</Nav.Link>
-              <Nav.Link href="/todos/register">Register</Nav.Link>
+              <Link to="/todos/register">Register</Link>
             </Nav>
           </Container>
         </Navbar>
