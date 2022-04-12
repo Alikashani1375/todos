@@ -18,10 +18,10 @@ export default function AppWrapper() {
             <App exact />
             <main>
               <Switch>
-                <Route exact path="/" component={Root} />
-                <Route exact path="/register" component={Signup} />
-                <Route exact path="/addtodo" component={Addtodo} />
-                <Route exact path="/yourtodos" component={FetchTodos} />
+                <Route exact path="/todos" component={Root} />
+                <Route exact path="/todos/register" component={Signup} />
+                <Route exact path="/todos/addtodo" component={Addtodo} />
+                <Route exact path="/todos/yourtodos" component={FetchTodos} />
               </Switch>
             </main>
           </Router>
