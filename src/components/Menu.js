@@ -35,6 +35,7 @@ function Menu() {
         </Navbar>
       </div>
       <div className="m-auto">
+        Wellcome
         {logedin ? (
           <div className="text-info">
             {useremail}
