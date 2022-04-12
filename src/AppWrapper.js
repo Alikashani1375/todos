@@ -15,9 +15,10 @@ export default function AppWrapper() {
       <div className="Bg1">
         <Provider store={datastore}>
           <Router exact>
+            <App exact />
             <main>
               <Switch>
-                <Route exact path="/" component={App} />
+                <Route exact path="/" component={Root} />
                 <Route exact path="/register" component={Signup} />
                 <Route exact path="/addtodo" component={Addtodo} />
                 <Route exact path="/yourtodos" component={FetchTodos} />
