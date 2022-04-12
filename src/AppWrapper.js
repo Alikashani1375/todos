@@ -15,7 +15,6 @@ export default function AppWrapper() {
       <div className="Bg1">
         <Provider store={datastore}>
           <Router exact>
-            <App exact />
             <main>
               <Switch>
                 <Route exact path="/" component={Root} />
