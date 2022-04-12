@@ -18,8 +18,8 @@ export default function AppWrapper() {
   return (
     <div className="Bg">
       <div className="Bg1">
-        <Provider store={datastore}>
-          <Router exact history={HashRouter}>
+        <Router exact history={HashRouter}>
+          <Provider store={datastore}>
             <App exact />
             <main>
               <Switch>
@@ -29,8 +29,8 @@ export default function AppWrapper() {
                 <Route exact path="/yourtodos" component={FetchTodos} />
               </Switch>
             </main>
-          </Router>
-        </Provider>
+          </Provider>
+        </Router>
       </div>
     </div>
   );
