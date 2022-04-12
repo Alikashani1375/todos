@@ -19,14 +19,14 @@ export default function AppWrapper() {
     <div className="Bg">
       <div className="Bg1">
         <Provider store={datastore}>
-          <Router history={HashRouter}>
+          <Router exact history={HashRouter}>
             <App exact />
             <main>
               <Switch>
-                <Route exact path="/todos" component={Root} />
-                <Route exact path="/todos/register" component={Signup} />
-                <Route exact path="/todos/addtodo" component={Addtodo} />
-                <Route exact path="/todos/yourtodos" component={FetchTodos} />
+                <Route exact path="/" component={Root} />
+                <Route exact path="/register" component={Signup} />
+                <Route exact path="/addtodo" component={Addtodo} />
+                <Route exact path="/yourtodos" component={FetchTodos} />
               </Switch>
             </main>
           </Router>
