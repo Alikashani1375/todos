@@ -66,3 +66,8 @@
   margin-top: 5px;
   overflow-wrap: break-word;
 }
+.links{
+  text-decoration: none;
+  margin: 5px;
+  color: #B7B5B0;
+}

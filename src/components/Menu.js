@@ -28,9 +28,15 @@ function Menu() {
           <Container>
             <Navbar.Brand href="/todos">Todo</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="/todos/addtodo">Add Todo</Nav.Link>
-              <Nav.Link href="/todos/yourtodos">Your Todos</Nav.Link>
-              <Link to="/todos/register">Register</Link>
+              <Link className="links" to="/todos/addtodo">
+                Add Todo
+              </Link>
+              <Link className="links" to="/todos/yourtodos">
+                Your Todos
+              </Link>
+              <Link className="links" to="/todos/register">
+                Register
+              </Link>
             </Nav>
           </Container>
         </Navbar>
